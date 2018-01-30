@@ -1,0 +1,23 @@
+.selected {
+  background-color: red;
+  color: white;
+  padding-left: 10px;
+}
+.students {
+  padding: 2px;
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+
+}
+.students li{
+  background: gray;
+  transition: 1s ease;
+}
+.students li.selected:hover {
+  background-color: blue;
+}
+
+.students li:hover {
+  background-color: blue;
+}
