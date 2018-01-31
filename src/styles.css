@@ -1,12 +1,7 @@
 h1{
-  color: blue;
   font-family: Arial;
   font-size: 50px;
 }
-body{
-  padding: 50px;
-}
-
 *{
   font-family: Arial;
 }

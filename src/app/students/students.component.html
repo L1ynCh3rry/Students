@@ -1,4 +1,5 @@
-<div>
+<div class="row allIn">
+<div class="col-3 leftDiv">
   <ul class="students">
     <li
     *ngFor="let student of students"
@@ -15,13 +16,47 @@
 
 
 
-<div *ngIf='selectedStudent'>
-  <h2>{{ selectedStudent.name }}</h2>
-  <div>
-    <div><span>{{ selectedStudent.id }}</span></div>
-    <div>
-      <input type="text" [(ngModel)]="selectedStudent.name">
-      {{ selectedStudents.name }}
-    </div>
+  <div class="col-9 rightDiv">
+      <div *ngIf='selectedStudent'>
+          <div class="row">
+                      <div class="col-4 text-center pt-4">
+                            <figure class="figure">
+                               <img class="user" src="../../assets/img/user.png" width="300" alt="Description"/>
+                            </figure><br>
+                            <h2 class="namehover">{{ selectedStudent.name }}</h2>
+                      </div>
+
+
+
+
+                        <div class="col-8 pt-4 description">
+
+
+                              <h2 class="namehover">DESCRIPTION:</h2>
+                              <div class="pl-3"><h4 class="nbm">Number:</h4>
+                                <p>{{ selectedStudent.id }}</p>
+                              </div>
+
+                              <div class="pl-3"><h4 class="nbm">Gender:</h4>
+                                <p>{{ selectedStudent.gender }}</p>
+                              </div>
+
+
+
+                                <div class="rename pl-3">
+                                    <h4 class="nbm">Rename:</h4>
+                                    <input type="text" [(ngModel)]="selectedStudent.name">
+                                    {{ selectedStudents.name }}
+                                </div>
+                        </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
   </div>
 </div>
