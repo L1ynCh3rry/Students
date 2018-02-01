@@ -1,0 +1,39 @@
+.big{
+  font-size: 38px;
+}
+.nbm{
+  margin-bottom: 0px!important;
+}
+.user{
+  max-width: 150px;
+  max-height: 150px;
+}
+.figure{
+  display: inline-block;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 5px black;
+}
+.namehover{
+  border-bottom: 1px solid transparent;
+  transition: 0.4s ease;
+  display: inline-block;
+}
+.namehover:hover{
+  border-bottom: 1px solid black;
+}
+.rename input{
+  color: black;
+  padding: 2px 5px;
+  background: rgba(255,255,255,0.6);
+  border: 0.4px solid black;
+}
+.rightDiv{
+  background-color: #ffb200;
+  padding: 10px 20px;
+  border-left: 0.6px solid black;
+  box-shadow: inset 0 0 5px black;
+  width: 1200px;
+}
